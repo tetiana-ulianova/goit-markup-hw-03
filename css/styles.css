@@ -13,6 +13,10 @@ ul, ol {
     padding: 0;
 }
 
+img {
+    display: block;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -141,10 +145,12 @@ display: block;
     color: #404bbf;
 }
 
+/* Основна інформація */
 
 .cta-section {
     text-align: center;
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 .cta-container {
     max-width: 1158px;
@@ -167,10 +173,14 @@ display: block;
         }
 
 .button {
+    display: block;
     box-sizing: border-box;
     border: 1px solid #000000;
     border-radius: 4px;
     padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     font-family: "Roboto", sans-serif;
     cursor: pointer;
     font-weight: 500;
@@ -189,31 +199,34 @@ display: block;
 
 /* Our Features */
 
-.visually-hidden {
-  
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-white-space: nowrap;
-clip-path: inset(100%);
-clip: rect(0 0 0 0);
-overflow: hidden;
-}
-
 .feature-section ul {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-gap: 24px;
+/* gap: 24px; */
 /* width: 100%; */
 /* margin: 120px 156px; */
 margin: 120px auto;
-padding: 0 24px;
+padding: 120px 0;
  max-width: 1158px;
 
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
 }
 
 .feature-item {
@@ -221,6 +234,7 @@ flex: 1 1 240px;
 max-width: 264px;
 max-width: 264px;
 text-align: left;
+width: calc((100% - 3 * 24px) / 4);
 }
 
 
@@ -271,6 +285,7 @@ background-color: #F4F4FD;
     color: #2e2f42;
     padding-top: 120px;
     padding-bottom: 0;
+    margin-bottom: 72px;
     margin: 0;
 }
 
@@ -278,9 +293,7 @@ background-color: #F4F4FD;
     gap: 24px;
     padding-top: 232px;
     margin-top: 0;
-    
-
-}
+    }
 
 .member-card {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -290,6 +303,7 @@ background-color: #F4F4FD;
     min-height: 380px;
     max-width: 264px;
     overflow: hidden;
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-image {
@@ -297,7 +311,14 @@ background-color: #F4F4FD;
         width: 264px;
         height: 260px;
 }
+
+.team-card-text {
+    padding: 32px 0;
+
+}
+
 .team-member-name {
+    text-align: center;
     padding-top: 32px;
     font-weight: 500;
         font-size: 20px;
@@ -305,6 +326,7 @@ background-color: #F4F4FD;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 .team-member-position {
     font-weight: 400;
@@ -313,7 +335,7 @@ background-color: #F4F4FD;
         letter-spacing: 0.02em;
         text-align: center;
         margin-top: 8px;
-}
+      }
 
 
 
@@ -327,6 +349,8 @@ background-color: #F4F4FD;
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 24px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -338,6 +362,7 @@ background-color: #F4F4FD;
     color: #2e2f42;
     margin-top: 120px;
     padding: 0 0;
+    margin-bottom: 72px;
 }
 
 .card-grid {
@@ -349,14 +374,15 @@ background-color: #F4F4FD;
         margin: 0;
                 list-style: none; */
 
-        display: grid;
-            grid-template-columns: repeat(3, 360px);
-            gap: 24px;
-            row-gap: 48px;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            margin-top: 72px;
+        
+        display: flex
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 48px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-top: 72px;
 }
 
 .portfolio-card {
@@ -412,6 +438,8 @@ letter-spacing: 0.02em;
 }
 
 
+/* Footer */
+
 .logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -426,6 +454,10 @@ letter-spacing: 0.02em;
    color: #404BBF;
 }
 
+.logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
 
 .footer-section {
     display: flex;
@@ -433,6 +465,7 @@ letter-spacing: 0.02em;
     background-color: #2E2F42;
     min-height: 312px;
     margin-top: 4px;
+    padding: 100px 0;
 }
 
 .footer-text-box {
