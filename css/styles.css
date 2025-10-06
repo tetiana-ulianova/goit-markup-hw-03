@@ -173,6 +173,7 @@ display: block;
         }
 
 .button {
+    all: unset;
     display: block;
     box-sizing: border-box;
     border: 1px solid #000000;
@@ -189,7 +190,7 @@ display: block;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background-color: #4D5AE5;
-    margin: 48px 0px 188px 0px;
+    margin: 48px auto 188px auto;
 }
 
 .button:hover,
@@ -198,6 +199,10 @@ display: block;
 }
 
 /* Our Features */
+
+.feature-section {
+    padding: 120px 0;
+}
 
 .feature-section ul {
 display: flex;
@@ -287,9 +292,10 @@ background-color: #F4F4FD;
     padding-bottom: 0;
     margin-bottom: 72px;
     margin: 0;
-}
+    }
 
 .team-list {
+    display: flex;
     gap: 24px;
     padding-top: 232px;
     margin-top: 0;
@@ -351,6 +357,7 @@ background-color: #F4F4FD;
     padding: 0 24px;
     padding-top: 120px;
     padding-bottom: 120px;
+    
 }
 
 .portfolio-title {
@@ -366,16 +373,7 @@ background-color: #F4F4FD;
 }
 
 .card-grid {
-    /* display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 24px;
-        padding: 0;
-        margin: 0;
-                list-style: none; */
-
-        
-        display: flex
+        display: flex;
         flex-wrap: wrap;
         gap: 24px;
         row-gap: 48px;
@@ -383,25 +381,34 @@ background-color: #F4F4FD;
         margin: 0;
         list-style: none;
         margin-top: 72px;
+        justify-content: center;
 }
 
+
 .portfolio-card {
-/* display: flex; */
+display: flex;
+flex-wrap: wrap;
 align-items: center;
+box-sizing: border-box;
 box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 width: 360px;
 height: 420px;
-/* width: calc((100% - 24px) / 3);
-text-align: center; */
+width: calc((100% - 48px) / 3);
+/* text-align: center; */
+/* width: calc((100% - 24px) / 3); */
    }
 
 
+
 .portfolio-image {
-    object-fit: cover;
-        display: block;
-        max-width: 360px;
-    min-height: 300px;
-    margin: 0;
+width: 100%;
+height: 300px;
+object-fit: cover;
+display: block;
+max-width: 360px;
+min-height: 300px;
+margin: 0;
+
 }
 
 .text-box {
@@ -460,16 +467,18 @@ letter-spacing: 0.02em;
 }
 
 .footer-section {
-    display: flex;
+    display: block;
     align-items: center;
     background-color: #2E2F42;
     min-height: 312px;
     margin-top: 4px;
     padding: 100px 0;
+    justify-content: flex-start;
+    
 }
 
 .footer-text-box {
-padding: 100px 1020px 100px 156px;
+padding: 100px 156px;
 }
 
 .footer-text {
