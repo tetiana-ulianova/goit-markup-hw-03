@@ -447,7 +447,7 @@ letter-spacing: 0.02em;
 
 /* Footer */
 
-.logo-footer {
+.logo-part {
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -458,14 +458,18 @@ letter-spacing: 0.02em;
         color: #F4F4FD;
         
 }
-.logo-footer:hover,
-.logo-footer:focus {
+.logo-part:hover,
+.logo-part:focus {
    color: #404BBF;
 }
 
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .logo {
-   
-display: inline-block;
+   display: inline-block;
 }
 
 .footer-section {
