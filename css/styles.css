@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, p {
 a {
     color: currentColor;
     text-decoration: none;
-}
+   }
 /* #endregion reset */
 
 
@@ -291,8 +291,7 @@ background-color: #F4F4FD;
     padding-top: 120px;
     padding-bottom: 0;
     margin-bottom: 72px;
-    margin: 0;
-    }
+}
 
 .team-list {
     display: flex;
@@ -354,9 +353,10 @@ background-color: #F4F4FD;
     justify-content: center;
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 120px 0 120px 0;
+    /* padding: 0 24px;
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 120px; */
     
 }
 
@@ -448,6 +448,7 @@ letter-spacing: 0.02em;
 /* Footer */
 
 .logo-footer {
+    margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
         font-size: 18px;
@@ -455,6 +456,7 @@ letter-spacing: 0.02em;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #F4F4FD;
+        
 }
 .logo-footer:hover,
 .logo-footer:focus {
@@ -462,7 +464,8 @@ letter-spacing: 0.02em;
 }
 
 .logo {
-   margin-bottom: 16px;
+   
+display: inline-block;
 }
 
 .footer-section {
