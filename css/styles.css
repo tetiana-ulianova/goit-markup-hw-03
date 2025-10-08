@@ -99,6 +99,7 @@ font-family: "Raleway", sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    display: inline-block;
 }
 .logo:hover,
 .logo:focus {
@@ -480,10 +481,6 @@ padding: 100px 0;
 .footer-logo,.logo {
     display: inline-block;
     margin-bottom: 16px;
-    
-}
-.footer-logo {
-    display: inline-block;
 }
 
 .footer-text {
