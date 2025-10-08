@@ -478,6 +478,9 @@ padding: 100px 0;
    color: #404BBF;
 }
 
+.footer-logo {
+    display: inline-block;
+}
 
 .footer-logo {
     display: inline-block;
