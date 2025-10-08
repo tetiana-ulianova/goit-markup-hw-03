@@ -478,7 +478,7 @@ padding: 100px 0;
 } */
 
 .footer-logo {
-    display: inline-block;
+    display: block;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
