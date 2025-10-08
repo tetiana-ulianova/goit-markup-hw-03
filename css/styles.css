@@ -148,15 +148,18 @@ display: block;
 /* Основна інформація */
 
 .cta-section {
-    text-align: center;
-    background-color: #2e2f42;
-    padding: 188px 0;
+    display: flex;
+    align-items: center;
+   background-color: #2e2f42;
+    height: 600px;
+    justify-content: center;
+    
 }
 .cta-container {
     max-width: 1158px;
-    margin: 0 auto;
     align-items: center;
     background-color: #2E2F42;
+    padding: 0;
 }
 .cta-section-title {
         font-weight: 700;
@@ -165,11 +168,8 @@ display: block;
         letter-spacing: 0.02em;
         text-align: center;
         color: #ffffff;
-        /* background-color: #2E2F42; */
-        /* padding: 188px 472px 0 472px; */
-        padding-top: 188px;
         max-width: 496px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         }
 
 .button {
@@ -190,7 +190,7 @@ display: block;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background-color: #4D5AE5;
-    margin: 48px auto 188px auto;
+    margin: 48px auto 0 auto;
 }
 
 .button:hover,
@@ -200,20 +200,20 @@ display: block;
 
 /* Our Features */
 
-.feature-section {
-    padding: 120px 0;
+.feature-section, .container {
+    margin: 120px auto 0 auto;
+    max-width: 1158px;
+    padding: 0;
 }
 
 .feature-section ul {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-/* gap: 24px; */
-/* width: 100%; */
-/* margin: 120px 156px; */
-margin: 120px auto;
-padding: 120px 0;
- max-width: 1158px;
+align-items: center;
+gap: 24px;
+
+
 
 }
 .visually-hidden {
@@ -230,15 +230,10 @@ padding: 120px 0;
 }
 
 .features-list {
-    display: flex;
-    gap: 24px;
+  
 }
 
 .feature-item {
-flex: 1 1 240px;
-max-width: 264px;
-max-width: 264px;
-text-align: left;
 width: calc((100% - 3 * 24px) / 4);
 }
 
@@ -259,26 +254,25 @@ letter-spacing: 0.02em;
 /* Team */
 .team {
     width: 100%;
-    padding: 120px 0;
     background-color: #F4F4FD;
+    
 }
 
 .team-container {
-   box-sizing: border-box;
+   /* box-sizing: border-box; */
     width: 100%;
+    margin: 0 auto;
+    margin-top: 120px;
+    height: 732px;
 }
 
 .team-container ul {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-/* max-width: 1158px; */
-width: 100%;
-height: 732px;
-margin: 0px auto;
-padding: 72px 156px;
 align-items: center;
 background-color: #F4F4FD;
+
 }
 
 .team-title {
@@ -288,20 +282,18 @@ background-color: #F4F4FD;
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-    padding-top: 120px;
-    padding-bottom: 0;
-    margin-bottom: 72px;
+   padding-top: 120px;
+   margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
     gap: 24px;
-    padding-top: 232px;
-    margin-top: 0;
-    }
+    align-items: center;
+    height: auto;
+     }
 
 .member-card {
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     background-color: #FFFFFF;
@@ -318,20 +310,19 @@ background-color: #F4F4FD;
 }
 
 .team-card-text {
-    padding: 32px 0;
-
+    /* padding: 32px 0; */
+margin-top: 32px;
 }
 
 .team-member-name {
     text-align: center;
-    padding-top: 32px;
-    font-weight: 500;
+       font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        margin-bottom: 8px;
+        
 }
 .team-member-position {
     font-weight: 400;
@@ -351,12 +342,10 @@ background-color: #F4F4FD;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     max-width: 1158px;
     margin: 0 auto;
-    padding: 120px 0 120px 0;
-    /* padding: 0 24px;
-    padding-top: 120px;
-    padding-bottom: 120px; */
+    
     
 }
 
@@ -367,7 +356,6 @@ background-color: #F4F4FD;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-top: 120px;
     padding: 0 0;
     margin-bottom: 72px;
 }
@@ -375,13 +363,11 @@ background-color: #F4F4FD;
 .card-grid {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
         row-gap: 48px;
-        padding: 0;
-        margin: 0;
         list-style: none;
-        margin-top: 72px;
         justify-content: center;
+        margin-bottom: 120px;
 }
 
 
@@ -390,10 +376,10 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 box-sizing: border-box;
-box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 width: 360px;
 height: 420px;
 width: calc((100% - 48px) / 3);
+box-shadow: 0px 0px 6px 0px rgba(46, 47, 66, 0.08);
 /* text-align: center; */
 /* width: calc((100% - 24px) / 3); */
    }
@@ -416,13 +402,6 @@ margin: 0;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 8px;
-    border-bottom: 1px solid #E7E9FC;
-    border-left: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
-    padding: 32px 16px;
-    width: 360px;
-    height: 120px;
     margin: 0;
 }
 
@@ -447,6 +426,23 @@ letter-spacing: 0.02em;
 
 /* Footer */
 
+.footer-section {
+
+    background-color: #2E2F42;
+    /* min-height: 312px; */
+    /* max-width: 1158px; */
+
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+     flex-direction: column;
+    padding-left: 156px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+   
+       }
 .logo-part {
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
@@ -472,23 +468,14 @@ letter-spacing: 0.02em;
    display: inline-block;
 }
 
-.footer-section {
-    display: block;
-    align-items: center;
-    background-color: #2E2F42;
-    min-height: 312px;
-    margin-top: 4px;
-    padding: 100px 0;
-    justify-content: flex-start;
-    
-}
+
 
 .footer-text-box {
-padding: 100px 156px;
+/* margin-left: 156px;
+margin-top: 100px; */
 }
 
 .footer-text {
-    margin-top: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
