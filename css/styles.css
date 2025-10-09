@@ -473,12 +473,10 @@ padding: 100px 0;
    color: #404BBF;
 }
 
-/* .footer-logo {
-    display: inline-block;
-} */
+
 
 .footer-logo {
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -487,7 +485,10 @@ padding: 100px 0;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-   
+   }
+
+.footer-logo {
+    display: inline-block;
 }
 
 .footer-logo:hover,
