@@ -452,7 +452,7 @@ padding: 100px 0;
 
 .footer-container {
     max-width: 1158px;
-    display: flex;
+    /* display: flex; */
     align-items: flex-start;
     flex-direction: column;
     
@@ -487,9 +487,6 @@ padding: 100px 0;
     color: #4D5AE5;
    }
 
-.footer-logo {
-    display: inline-block;
-}
 
 .footer-logo:hover,
 .footer-logo:focus {
