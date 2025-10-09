@@ -381,18 +381,18 @@ background-color: #F4F4FD;
         column-gap: 24px;
         row-gap: 48px;
         list-style: none;
-        justify-content: center;
-        margin-bottom: 120px;
+        /* justify-content: center;
+        margin-bottom: 120px; */
 }
 
 
 .portfolio-card {
-display: flex;
+/* display: flex;
 flex-wrap: wrap;
 align-items: center;
 box-sizing: border-box;
 width: 360px;
-height: 420px;
+height: 420px; */
 width: calc((100% - 48px) / 3);
 /* box-shadow: 0px 0px 6px 0px rgba(46, 47, 66, 0.08); */
 /* text-align: center; */
