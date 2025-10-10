@@ -143,7 +143,7 @@ display: block;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
-        padding: 24px;
+        
 }
 .nav:hover {
     color:#404bbf;
@@ -351,13 +351,13 @@ background-color: #F4F4FD;
 /* Portfolio section*/
 
 .portfolio {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     max-width: 1158px;
-    margin: 0 auto;
+    margin: 0 auto; */
     padding-top: 120px;
     padding-bottom: 120px;
     
@@ -381,9 +381,7 @@ background-color: #F4F4FD;
         column-gap: 24px;
         row-gap: 48px;
         list-style: none;
-        /* justify-content: center;
-        margin-bottom: 120px; */
-}
+       }
 
 
 .portfolio-card {
